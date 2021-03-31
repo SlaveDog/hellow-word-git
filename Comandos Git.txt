@@ -1,0 +1,63 @@
+git init - iniciar proyecto nuevo
+git help -- AIUUUDAAA
+
+git add <file> - agregar archivos al area de trabajo uno por uno
+git add . - agregar todos archivos 
+git add "nombre del archivo o directorio"/*.css -- cambios solo con esa extension
+git reset "directorio"/*.scss -- remover del stage
+git reset *.scss -- remover del stage los que terminen en esa letra 
+
+git status - muestra estado estan los archivos
+
+git commit - primer punto de control de nuestro codigo 
+git commit -m ["Mensaje descriptivo"] > commit sin entrar al bash 
+git commit --amend -m ["mensaje"] - rectificacion de un mensaje
+git mv [nombre del archivo.ext] [nombre nuevo del archivo.ext] - cambiar nombre de un archivo
+git rm [nombre del archivo.ext] - borrar el archivo
+git reset --soft [id del commit] - marcha atras de un commit - pero sin hacer cambios
+git reset --hard [id del commit] - recuperar la version del commit 
+git reset --mixed [id commit] - va hacia el commit dado pero los cambios se mantienen 
+git log - ver todos los commits del programa
+git reflog - historico de los commits 
+
+
+git checkout . --[archivio] - revertir los cambios de los archivos
+git diff [archivo] - ver las diferencias hechas en los archivos
+git remote add origin [link del repositori] - enlazar repositorio  
+git push - subir archivo a un repositorio remoto /// git push -u origin master // git push origin master
+git pull - traer  cambios de los otros desarrolladores
+git clone - copia desde el servidor al computador 
+
+git branch - mostrar ramas de proyecto
+git branch [Nombre] - crear rama alternativa
+git branch -d [rama la cual queremos borrar]
+git checkout -b [rama la cual queramos crear e ir directamente]
+git checkout [nombre de rama] - cambiar de rama
+git log --oneline --decorate --all --graph - ver comics y ramas 
+git merge [rama al cual queremos unir]["solo se puede hacer si no hay conflicto entre archivos"] - unir dos ramas	
+
+
+git tag [nombre de etiqueta] - crear etiqueta
+git tag -a [nombre de la etiqueta] ["Mensaje descriptivo"] - crear una etiqueta con un mensaje descriptivo
+git tag -a[nombre de la etiqueta] [identificador de un commir] -m ["Mensaje descriptivo"] - crear etiqueta a un commit anterior 
+git tag - ver la etiqueta para el utlimo commit 
+git tag -d [nombre de la etiqueta] - borrar etiqueta
+git show [nombre de la etiqueta] - ver con detalle lo que contiene hasta ese commit
+
+git config --global user.mail "correo electronico"
+git config --global user.name "nombre del desarrollador"
+git config --global -l  "Ver quien trabaja en la maquina"
+git config --global --global alias.'alias' "comando a poner el alias"
+
+.gitignore - archivo para escribir archivos y carpetas que git quiere ignorar
+
+git remote set-url origin - cambiar el archivo de repositorio
+git remote -v - ver repositorio asociado al proyecto
+
+
+
+cd /home/[usuario]/.ssh && ssh-keygen - crear ssh key
+cat id_rsa.pub - ver sshkey 
+
+rm -rf .git - borrar seguimiento del git
+
